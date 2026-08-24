@@ -39,6 +39,7 @@ Action Recorder/
     └── session_YYYYMMDD_HHMMSS/
         ├── audio.wav        # Audio registrato dal microfono
         └── events.json      # Log strutturato delle azioni
+---
 🚀 Come Utilizzarlo
 1. Avvio Rapido
 Fai doppio click sul file AVVIA-RECORDER.bat (o esegui bin\uia_engine.exe). Apparirà una barra scura in alto a destra sullo schermo.
@@ -53,6 +54,8 @@ Esegui il tuo lavoro al computer parlando e spiegando i passaggi.
 Puoi mettere in ❚❚ Pausa e riprendere in qualsiasi momento.
 Premi ■ Stop per terminare la sessione.
 Troverai i file pronti nella cartella recordings/session_<data_ora>/.
+---
+
 📋 Esempio di events.json
 code
 JSON
