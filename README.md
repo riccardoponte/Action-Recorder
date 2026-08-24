@@ -2,7 +2,7 @@
 
 > **Applicazione portatile per registrare ogni flusso di lavoro con cronologia delle azioni e audio**
 
-**Action Recorder** è uno strumento leggero e autonomo per Windows ideato per documentare, mappare e analizzare qualsiasi processo operativo al computer. Registra in parallelo la voce dell'utente e ogni interazione con il sistema operativo, generando una traccia audio sincronizzata e un log dettagliato degli eventi.
+**Action Recorder** è uno strumento leggero e autonomo per Windows ideato per documentare, mappare e automatizzare qualsiasi processo operativo al computer. Registra in parallelo la voce dell'utente e ogni interazione con il sistema operativo, generando una traccia audio sincronizzata e un log dettagliato degli eventi.
 
 ---
 
@@ -17,9 +17,11 @@
 
 ---
 
-### 🚦 Utilizzo Rapido
+### 🚦 Flusso di Utilizzo
 
-1. **Avvia:** Fai doppio click su `AVVIA-RECORDER.bat` per aprire la barra strumenti in alto a destra.
-2. **Verifica il Mic:** Clicca su `🎙️ Mic [⚙]` per testare il segnale vocale e scegliere il microfono.
-3. **Registra:** Premi `● Start`, svolgi la tua procedura al computer parlando liberamente, quindi premi `■ Stop`.
-4. **Risultato:** Troverai l'audio sincronizzato e il file di log dettagliato all'interno della cartella `recordings/`.
+1. **Avvio:** Fai doppio click su `AVVIA-RECORDER.bat` per aprire la barra degli strumenti in alto a destra.
+2. **Test Microfono:** Clicca su `🎙️ Mic [⚙]` per testare il segnale vocale e selezionare la periferica corretta.
+3. **Registrazione:** Premi `● Start`, esegui la procedura al computer spiegando a voce i passaggi, quindi premi `■ Stop`.
+4. **Raccolta File:** Apri la cartella della sessione in `recordings/` per prelevare `events.json` e `audio.wav`.
+5. **Generazione Automazione (LLM):** Allega sia il file `.json` sia l'audio `.wav` al tuo LLM di riferimento (es. **Google Gemini**, ChatGPT, Claude) con un prompt del tipo:
+   > *"Trascrivi l'audio allegato e, incrociando le spiegazioni vocali con gli eventi del file JSON, converti questo flusso di lavoro in uno script PowerShell (o script Python / Macro Excel) per automatizzare l'intera procedura."*
